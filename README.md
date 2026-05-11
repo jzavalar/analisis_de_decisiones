@@ -44,12 +44,12 @@ Considere el [programa oficial vigente de la UEA Análisis de Decisiones](http:/
 | Campo | Información |
 |-------|-------------|
 | **Clave UEA** | 2211092 |
-| **Trimestre** | 2025-O |
-| **Horario** | Lunes y Miércoles, 18:00–20:00 h |
+| **Trimestre** | 25-P |
+| **Horario** | Lunes y Miércoles, 14:00–16:00 h |
 | **Periodo** | 6 de mayo – 22 de julio de 2025 |
-| **Salón** | Edificio Anexo A, Sala J |
-| **Grupo** | HE55 |
-| **Profesor** | Dr. Jesús Zavala Ruiz |
+| **Salón** | Edificio Anexo A, Sala K |
+| **Grupo** | HE51 |
+| **Profesor** | dr. Jesús Zavala Ruiz |
 | **Asesorías** | Martes 20:00–22:00 h, vía Telegram (previa solicitud) |
 | **Contacto** | [jzr@xanum.uam.mx](mailto:jzr@xanum.uam.mx) • [@jzavalar](https://t.me/jzavalar) |
 
