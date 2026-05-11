@@ -127,13 +127,13 @@ Se aplicará conforme al calendario institucional (última semana de julio), baj
 
 #### Bibliografía Obligatoria
 - Rangel Nafaile, L. M. (2012). *Guía de estudio de la asignatura Análisis de Decisiones*. México: UNAM-FES Acatlán. [Acceso institucional vía bidi.uam.mx]
-- Irizarry, R. A. (2023). *Introducción a la ciencia de datos con R*. Capítulo 24: Procesamiento de cadenas. [Disponible en línea]
+- Irizarry, R. A. (2023). *Introducción a la ciencia de datos con R*. Capítulo 24: Procesamiento de cadenas. [Disponible en línea](https://rafalab.dfci.harvard.edu/dslibro/)
 
 #### Bibliografía Complementaria
-- Howard, R. A. (1988). Decision analysis: practice and promise. *Management Science, 34*(6), 679-695.
-- Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics, 69*(1), 99-118.
-- Wickham, H. (2019). *Advanced R*. Capítulo 22: Debugging. [Disponible en línea]
-- Keeney, R. L. (1982). Decision Analysis: An overview. *Operations Research, 30*(5), 803-838.
+- Howard, R. A. (1988). Decision analysis: practice and promise. *Management Science, 34*(6), 679-695. [https://www.jstor.org/stable/2632123](https://www.jstor.org/stable/2632123)
+- Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics, 69*(1), 99-118. [https://www.jstor.org/stable/1884852](https://www.jstor.org/stable/1884852)
+- Wickham, H. (2019). *Advanced R*. Capítulo 22: Debugging. [Disponible en línea](https://adv-r.hadley.nz/debugging.html)
+- Keeney, R. L. (1982). Decision Analysis: An overview. *Operations Research, 30*(5), 803-838. [https://www.jstor.org/stable/170347(https://www.jstor.org/stable/170347)
 
 #### Recursos Digitales Institucionales
 - Biblioteca Digital UAM: [bidi.uam.mx](https://bidi.uam.mx)
