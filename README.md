@@ -1,24 +1,11 @@
+# Programa Analítico de la UEA **Análisis de Decisiones** (Teoría)
+### Licenciatura en Administración — Unidad Iztapalapa
+
 <img src="https://github.com/jzavalar/informatica/blob/main/images/conjunto-baseIzt.png" alt="UAM Iztapalapa" width="60%"/>
 
-## Programa Analítico de la UEA Análisis de Decisiones (Teoría)
-## Licenciatura en Administración
+---
 
-**Clave de la UEA:** *2211092*, **Trimestre:** *25 Otoño*
-
-**Grupos:**  *HE55*: *Lunes y miércoles* de *18:00 a 20:00*.
-
-**Salón:** Edificio Anexo A-Sala J.
-
-**Asesorías:**  *Martes* de *20:00* a *22:00 hr*, vía [Telegram](https://telegram.org/apps), previa solicitud.
-
-*profr. dr. Jesús Zavala Ruiz*
-
-**Contacte al profesor**:
-- Correo electrónico: [jzr@xanum.uam.mx](mailto:jzr@xanum.uam.mx)
-- Telegram: <img src="https://github.com/jzavalar/informatica/blob/main/images/telegram_logo.svg" alt="Telegram" width="3%"/> [@jzavalar](https://t.me/jzavalar)
-
-
-### Introducción
+#### Introducción
 
 La **Investigación de Operaciones** surgió como una disciplina estructurada en los albores de la Segunda Guerra Mundial, cuando un equipo multidisciplinario liderado por el profesor Patrick Maynard Stuart Blackett fue convocado por el gobierno británico para abordar problemas técnicos y estratégicos en el desarrollo de armamento y logística militar (Jaiswal, 1997, p. 2)[^1]. Patrick Blackett es ampliamente reconocido como el *padre de la investigación de operaciones* (OR) (Ormerod, 2002, p. 188 [^2]) debido a su papel fundamental en su desarrollo durante la Segunda Guerra Mundial. Su trabajo en esta área no solo tuvo un impacto decisivo en la guerra, sino que también sentó las bases para la aplicación de estos métodos en ámbitos civiles e industriales en el período de posguerra.
  
@@ -52,7 +39,34 @@ Considere el [programa oficial vigente de la UEA Análisis de Decisiones](http:/
 [Calendario UAM vigente](http://www.uam.mx/calendario/index.html).  
 
 
-### Objetivos  
+#### II. Datos Generales
+
+| Campo | Información |
+|-------|-------------|
+| **Clave UEA** | 2211092 |
+| **Trimestre** | 2025-O |
+| **Horario** | Lunes y Miércoles, 18:00–20:00 h |
+| **Periodo** | 6 de mayo – 22 de julio de 2025 |
+| **Salón** | Edificio Anexo A, Sala J |
+| **Grupo** | HE55 |
+| **Profesor** | Dr. Jesús Zavala Ruiz |
+| **Asesorías** | Martes 20:00–22:00 h, vía Telegram (previa solicitud) |
+| **Contacto** | [jzr@xanum.uam.mx](mailto:jzr@xanum.uam.mx) • [@jzavalar](https://t.me/jzavalar) |
+
+#### II. Fundamentación y Enfoque
+
+La Unidad de Enseñanza-Aprendizaje *Análisis de Decisiones* introduce al estudiante en los fundamentos metodológicos de la **Investigación de Operaciones** y su evolución hacia el análisis cuantitativo de decisiones administrativas. El curso parte del legado histórico de Patrick Blackett y la formalización del método científico aplicado a problemas estratégicos (Jaiswal, 1997; Ormerod, 2002), para desarrollar competencias en la estructuración, modelación y resolución de problemas de decisión bajo certeza, incertidumbre y riesgo.
+
+El enfoque pedagógico integra:
+- **Fundamentos teóricos**: teoría de la elección racional, racionalidad limitada (Simon, 1955) y axiomas del comportamiento racional.
+- **Herramientas metodológicas**: matriz de pagos, árboles de decisión, criterios no probabilísticos (Wald, Maximax, Hurwicz, Savage) y probabilísticos (Laplace, Bayes, VEIP).
+- **Implementación computacional**: uso de R y RMarkdown para la automatización de cálculos, generación de reportes reproducibles y visualización de estructuras de decisión.
+
+> **Nota sobre ética computacional**: El uso de inteligencia artificial se permite como asistencia técnica para depuración de código o consulta de sintaxis, nunca como sustituto del razonamiento analítico propio. Toda solución debe reflejar comprensión conceptual verificable.
+
+#### III. Objetivos de Aprenizaje
+
+#### Objetivos  
 
 #### Objetivo General:  
 Que al final del curso los alumnos sean capaces de:  
@@ -64,288 +78,73 @@ Que al finalizar el curso el alumno sea capaz de:
 - Realizar la estructuración de problemas de decisión y seleccionar y aplicar el modelo de decisión en problemas de administración.
 - Buscar y ponderar información relevante en fuentes diversas.
 - Argumentar una propuesta crítica sobre un tema específico.
+- Implementar algoritmos básicos de análisis de decisiones en R, generando reportes técnicos reproducibles.
+
+#### IV. Calendario de Actividades
+
+| Sem | Fechas | Sesión | Tema Central | Actividades Clave | Entregable |
+|-----|--------|--------|-------------|------------------|------------|
+| **1** | 6–8 may | 1 | Presentación. Fundamentos históricos de la IO. Elementos de un acto de decisión. | Encuadre administrativo. Lectura: Rangel (2012), pp. 11-13. Activación de entorno digital. | Práctica 0.1: Configuración de R, RStudio, RMarkdown |
+| | | 2 | Matriz de pagos. Dominación. Tipología de problemas. | Ejercicio manual: Ej. 1 (Rangel). Introducción a estructuras de datos en R. | Práctica 1.1: Primer reporte RMarkdown (Ej. 1) |
+| **2** | 13–15 may | 3 | Metodología de estructuración de problemas. Encuadre sistemático. | Taller: aplicación del "machote" de encuadre a casos administrativos. | Tarea 2.1: Encuadre manual de 3 problemas |
+| | | 4 | Implementación computacional de la estructuración. Funciones básicas en R. | Práctica guiada: codificación de matriz de pagos. Depuración básica. | Práctica 2.1: *Estructura_1.Rmd* en GitHub |
+| **3** | 20–22 may | 5 | Criterios no probabilísticos I: Maximin (Wald) y Maximax. | Análisis comparativo de actitudes frente al riesgo. Resolución manual de Ej. 2. | Tarea 3.1: Síntesis conceptual + glosario Unidad 2 |
+| | | 6 | Criterios no probabilísticos II: Hurwicz (α) y Savage (minimax regret). | Cálculo de matriz de pérdida de oportunidad. Implementación en R. | Práctica 3.1: *Criterios_Incertidumbre.Rmd* |
+| **4** | 27–29 may | 7 | Integración de criterios bajo incertidumbre. Análisis de dominancia. | Caso aplicado: decisión de inversión en PYME. Socialización de dudas. | Tarea 3.2: Grupo de Ejercicios 2 (Rangel) |
+| | | 8 | **Evaluación formativa**. Cierre de Unidad 2. | Quiz 1 (15 min, conceptual). Retroalimentación con rúbrica. | Portafolio parcial (semanas 1-4) |
+| **5** | 3–5 jun | 9 | Criterios probabilísticos I: Laplace y Máxima Posibilidad. | Construcción de distribuciones subjetivas. Ejercicio de asignación de probabilidades. | Tarea 4.1: Ejercicios de probabilidad subjetiva |
+| | | 10 | Regla de Bayes (VEM) y Pérdida de Oportunidad Esperada (POE). | Cálculo manual y en R del VEM y POE. Verificación: VEM + POE = constante. | Práctica 4.1: *VEM_POE.Rmd* (Ej. 5-6) |
+| **6** | 10–12 jun | 11 | Valor Esperado de la Información Perfecta (VEIP): Métodos 1 y 2. | Cálculo del VEIP como diferencia GEC – VEM. Interpretación administrativa. | Tarea 4.2: Cálculo de VEIP en 3 casos aplicados |
+| | | 12 | Análisis de sensibilidad: regiones de preferencia y estabilidad. | Graficación de regiones de preferencia en R. Discusión: robustez de la decisión. | Práctica 4.2: *Sensibilidad.Rmd* con gráfica |
+| **7** | 17–19 jun | 13 | Árboles de decisión: estructura cronológica, nodos e inducción regresiva. | Construcción manual de árbol (Ej. 9, Rangel). Identificación de rutas óptimas. | Tarea 5.1: Árbol dibujado + justificación |
+| | | 14 | **Primer Examen Parcial** (Teórico-Práctico). | Examen (60 min): conceptos + resolución de problema. Introducción a `data.tree`. | Práctica 5.1: *Arbol_Decision.Rmd* |
+| **8** | 24–26 jun | 15 | Decisiones con experimentación: probabilidades a posteriori y Teorema de Bayes. | Actualización bayesiana con datos muestrales. Ejercicio: urnas (Ej. 11). | Tarea 6.1: Cálculo de probabilidades a posteriori |
+| | | 16 | Valor Esperado de la Información Muestral (VEIM). Análisis costo-beneficio. | Comparación VEIP vs. VEIM. Caso: estudio de mercado con confiabilidad parcial. | Práctica 6.1: *Bayes_Updating.Rmd* |
+| **9** | 1–3 jul | 17 | Teoría de la utilidad: función de utilidad del dinero y actitud frente al riesgo. | Método de Neumann-Morgenstern (EMC). Construcción de curva de utilidad personalizada. | Tarea 7.1: Determinación de su propia función de utilidad |
+| | | 18 | Decisiones secuenciales y análisis en forma extensiva vs. forma normal. | Resolución de problema multi-etapa (Ej. 16). Comparación metodológica. | **Tarea Integradora**: Caso aplicado a administración |
+| **10** | 8–10 jul | 19 | Síntesis del curso. Integración de modelos y reflexión epistemológica. | Presentación de casos integradores (equipos). Discusión: límites del análisis cuantitativo. | Portafolio final (todos los .Rmd + tareas digitalizadas) |
+| | | 20 | **Segundo Examen Parcial** (Práctico-Computacional). Cierre. | Examen (90 min): resolución de problema completo en RStudio Cloud. Retroalimentación final. | Encuesta de satisfacción del curso |
+
+#### V. Evaluación
+
+#### Esquema de Calificación
+| Componente | Ponderación | Modalidad | Observaciones |
+|-----------|-------------|-----------|---------------|
+| **Tareas conceptuales** | 15% | Manual (cuaderno) → digitalización | 8 entregas; rúbrica de completitud y reflexión |
+| **Prácticas computacionales** | 15% | RMarkdown en GitHub / RStudio Cloud | 8 entregas; evaluación de código, reporte y reproducibilidad |
+| **Exámenes parciales** | 70% | Presencial / RStudio Cloud | Examen 1 (teórico-práctico, 35%); Examen 2 (práctico-computacional, 35%) |
+| **Total** | **100%** | | |
+
+#### Evaluación de Recuperación
+Se aplicará conforme al calendario institucional (última semana de julio), bajo los siguientes requisitos:
+1. Asistencia ≥ 80%.
+2. Entrega del portafolio completo (tareas + prácticas).
+3. Transcripción manual de conceptos, ejemplos y ejercicios de las Unidades 1-3 de Rangel (2012).
+
+**Modalidad**: Examen presencial de 2 horas, resolución de 2 problemas de análisis de decisiones con enfoque metodológico explícito (encuadre, razonamiento, solución). Material permitido: bolígrafo, lápiz, calculadora básica (no dispositivos móviles).
+
+#### VI. Recursos Bibliográficos
+
+#### Bibliografía Obligatoria
+- Rangel Nafaile, L. M. (2012). *Guía de estudio de la asignatura Análisis de Decisiones*. México: UNAM-FES Acatlán. [Acceso institucional vía bidi.uam.mx]
+- Irizarry, R. A. (2023). *Introducción a la ciencia de datos con R*. Capítulo 24: Procesamiento de cadenas. [Disponible en línea]
+
+#### Bibliografía Complementaria
+- Howard, R. A. (1988). Decision analysis: practice and promise. *Management Science, 34*(6), 679-695.
+- Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics, 69*(1), 99-118.
+- Wickham, H. (2019). *Advanced R*. Capítulo 22: Debugging. [Disponible en línea]
+- Keeney, R. L. (1982). Decision Analysis: An overview. *Operations Research, 30*(5), 803-838.
+
+#### Recursos Digitales Institucionales
+- Biblioteca Digital UAM: [bidi.uam.mx](https://bidi.uam.mx)
+
+> **Accesibilidad**: Todas las prácticas son realizables en RStudio Cloud. Se dispone de laboratorios institucionales para estudiantes sin equipo personal.
+
+#### VII. Políticas Académicas
+
+1. **Asistencia**: Obligatoria ≥ 80% para derecho a evaluación (Reglamento de Estudios UAM).
+2. **Entregas**: Fecha límite: 23:59 h del día señalado. Retrasos > 24 h sin justificación documentada: 20% de penalización por día.
+3. **Integridad académica**: Plagio, copia o uso no declarado de IA generativa en evaluaciones: calificación cero en el componente afectado y reporte a coordinación.
+4. **Comunicación**: Consultas académicas vía Telegram (previa solicitud de cita). Respuestas en un plazo máximo de 48 h hábiles.
+5. **Ajustes razonables**: Estudiantes con necesidades específicas pueden solicitar adaptaciones mediante la Coordinación de la Licenciatura.
 
-
-### Contenido Sintético
-
-#### Unidad 0. Prerrequisitos
-1. Prácticas:
-   - *Práctica 0.1: Activación de software*.
-   
-      *Objetivo*: Aprender las operaciones con archivos y directorios en Google Drive, como un ejemplo de plataformas de cómputo en la nube.  
-      
-      *Parte 1*. Aprenda un sistema de organización de archivos ([guía](https://www.youtube.com/watch?v=duNwB8xt2_w)). ([tutorial](https://www.youtube.com/watch?v=I3jii6ltINY&frags=pl%2Cwn)).
-
-      *Parte 2*. Active su cuenta de [Office 365 Pro Plus](https://www.uam.mx/o365/index.html) (software de oficina). Active su cuenta de [Telegram](https://telegram.org/). 
-   
-      *Parte 3*. Si tiene computadora en casa, descargue en instale el siguiente software: [*7-zip*](https://www.7-zip.org/download.html) (compresor/descompresor), [*OnlyOffice*](https://www.onlyoffice.com/) (suite de oficina), [*R*](https://www.r-project.org/) (software para análisis de datos y estadística) y [*RStudio*](https://posit.co/) (GUI para R).
-
-      *Parte 4*. Cree su cuenta en [RStudio cloud](https://posit.cloud/) que le permitirá ejecutar código fuente de R en la nube, hacer las modificaciones que requiera y usarlo para sus propias necesidades.
-   
-##### *Bibliografía Complementaria:*
-- Ibiza, D. (2018, Apr 3). 1. Introducción a *Google Drive*: 
-     1. Primeros pasos ([tutorial](https://www.youtube.com/watch?v=aLPTDIS-8dk&t=330s))    
-     2. Gestión de archivos y carpetas ([url](https://www.youtube.com/watch?v=aLPTDIS-8dk&t=2042s))
-     3. Opciones de archivos y carpetas ([url](https://www.youtube.com/watch?v=aLPTDIS-8dk&t=3313s))
-     4. Cómo compartir archivos y carpetas ([url](https://www.youtube.com/watch?v=aLPTDIS-8dk&t=4238s))
-     5. Trabajar con documentos ([url](https://www.youtube.com/watch?v=aLPTDIS-8dk&t=5222s))
-  In _Tutorial Google Drive | Completo | Principiantes | Paso a Paso_. YouTube. (video). ([url](https://www.youtube.com/watch?v=aLPTDIS-8dk)).  
-
-
-#### Unidad 1. Presentación
-1. Introducción
-2. Presentación del programa
-3. Evaluación Global y de Recuperación
-4. Prácticas:  
-    - *Práctica 1.1: Elaboración de informes con RMarkdown en RStudio*. (Entrega: Semana 1).
-
-     *Objetivo*: Aprender a crear y editar archivos RMarkdown en *RStudio*.
-
-     *Parte 1*. Copie el texto de la Unidad 1 (Rangel, 2012, pp. 11-16), corríjalo y conviértalo a un archivo RMarkdown (*Unidad 1.Rmd*) usando RStudio. Edítelo correctamente con la sintaxis de *RMarkdown* e incruste código *LaTex* para lo que resulte pertinente. Use la inteligencia artificial (IA), pero no olvide usar la más valiosa: la inteligencia natural. Suba su proyecto a [RStudio.cloud](https://posit.cloud/).
-
-     *Parte 3*. Extraiga el Ejemplo 1 (Rangel, 2012) y resuélvalo con R. 
-
-     Al final, debe obtener el archivo .Rmd base para la generación de los archivos archivo HTML y PDF generados durante la conversión. Suba su proyecto a [RStudio.cloud](https://posit.cloud/).
-
-      
-##### *Bibliografía Obligatoria:*   
-- Rangel N., L. M. (2012). [*Guía de estudio de la asignatura Análisis de Decisiones*](https://libgen.rs/book/index.php?md5=2E0058C96A3774D8A8D050470BEBB977). México, D.F.: Facultad de Estudios Superiores Acatlán, UNAM.   
-      
-##### *Bibliografía Complementaria:*   
-- Boccardo Bosoni y Ruiz Bruzzone. (2019). [Introducción al uso de RMarkdown para la compilación de resultados de RStudio en diferentes formatos](https://bookdown.org/gboccardo/manual-ED-UCH/introduccion-al-uso-de-rmarkdown-para-la-compilacion-de-resultados-de-rstudio-en-diferentes-formatos.html).
-- Campos (2020). [Imágenes y multimedia en Rmarkdown](https://rpubs.com/Juve_Campos/ImagenesyMultimediaEnRmarkdown).
-- DaniMedi (2020, Sep 17). [Ecuaciones (LaTeX) | Tutorial básico de R Markdown](https://www.youtube.com/watch?v=nd-YudmcLjQ).
-- Gualchi. (2019). [Guía de R Markdown](https://gesel.github.io/materiales/10Gu%C3%ADa_RMarkdown.pdf).
-- José Antonio: Estadística Aplicada (2021, Aug 23). [Aprende lo Básico de R Markdown en 20 Minutos](https://www.youtube.com/watch?v=6Qj8yBFgT9Q).  
-- The Epidemiologist R Handbook. (2022). [40 Reports with R Markdown](https://epirhandbook.com/en/reports-with-r-markdown.html).
-- Universitat de les Illes Balears. Som UIB (2021). MOOC Aprende R : Introducción al tratamiento de datos con R y RStudio. *YouTube*. ([url](https://www.youtube.com/playlist?list=PLnXFIHWLWQXFOIOdpAv2ioBHQuYgV7x2t)).
-
-
-#### Unidad 2. De la 'Teoría de la Elección Racional' al 'Análisis de Decisiones'
-1. La ciencia de la administración y la toma de decisiones
-2. Toma de decisiones, teoría de la elección racional, racionalidad limitada y cibernética
-3. ¿Qué es el análisis de decisiones?
-4. Alcances y limitaciones del análisis de decisiones
-5. Investigación:
-   Ver especificaciones de la investigación [aquí](https://github.com/jzavalar/Analisis_de_Decisiones/blob/main/Investigacion_teoria_eleccion_racional.md)
-
-### Bibliografía:
-- Howard, R. A. (1988). Decision analysis: practice and promise, *Management Science, 34*(6), 679-695. ([url](https://www.jstor.org/stable/2632123)) ([PDF](https://sci-hub.ru/10.2307/2632123))
-- Simon, H. A. (1964). *El comportamiento administrativo*. México: Aguilar. [PDF](https://libgen.rs/book/index.php?md5=563E5E785150855FBAF63179444D94FC)
-- Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics*, *69*(1), 99–118. https://doi.org/10.2307/1884852
-- Simon, H. A. (1997). *Models of Bounded Rationality: Empirically Grounded Economic Reason* (Vol. 3). USA: MIT Press. [epub](https://libgen.rs/book/index.php?md5=F123FF229BF457392D51C94F80C576F2)
-- Allison, G. T., & Zelikow, P. (1999). *Essence of decision: Explaining the Cuban missile crisis*. USA: Pearson. [PDF](https://libgen.rs/book/index.php?md5=803EF440F93483014B7F4FA6C0B1174C)
-  
-#### Unidad 3. Los problemas de decisión
-1. Modelación de los problemas de decisión
-2. Proceso de resolución de problemas de decisión
-3. Estructuración de problemas de decisión
-4. Modelos de decisión: 
-   - Matriz de pagos
-   - Árboles de decisión
-   - Modelo de scoring
-   - Modelo de norma mínima
-   - Otras técnicas
-5. Tareas y Prácticas:
-- *Tarea 3.1: I. Introducción: Encuadre de un problema de decisión*. (Entrega: Semana 2).
-
-  *Objetivo*: Aprender los conceptos del encuadre de un problema de decisión.
-
-  *Parte 1*. Transcriba *en su cuaderno* el Ejemplo 1 y el grupo de ejercicios de la Unidad 1. Aplique los conceptos y el machote del Ejemplo 1, según se solicite en cada ejercicio. Resolver los ejercicios, con lápiz y papel, en su cuaderno, reforzará sus conocimientos, así que realice una aplicación reflexiva y no mecánica de los conceptos. Socialice sus conocimientos y dudas con sus compañeros a través del grupo de Telegram. Haga equipo con uno o dos compañeros del grupo.
-
-  Tome buenas fotografías de su tarea y súbalas al grupo de Telegram, antes de la clase, en la fecha programada.
-
-- *Práctica 3.2: I. Introducción: Encuadre de los problemas de decisión*. (Entrega: Semana 2).
-
-  *Objetivo*: Aprender y practicar el algoritmo de encuadre de problemas de decisión  usando R.
-
-  *Parte 1*. Como prerrequisito debe haber realizado las tareas y prácticas previas.
-
-  *Parte 2*· Utilice el machote del código del Ejemplo 1 (Rangel, 2012, pp. 13-14) y resuélvalo en un archivo RMarkdown, embebiendo texto, código R y código LaTex. Demuestre que obtiene los mismos resultados. Llame a su archivo *Ejemplo 1.Rmd* y súbalo a su cuenta de GitHub donde corresponda. Instale los paquetes que requiera desde CRAN y úselos en RStudio. 
-
-  *Parte 3*. Resuelva los ejercicios de la Unidad 1 en un archivo RMarkdown llamado *Ejercicios 1.Rmd* y súbalo a su cuenta de [RStudio en la nube](https://posit.cloud/). Asegúrese que puede generar atomáticamente y correctamente la solución para cada ejercicio, generando el reporte en un archivo *html*, a partir del archivo fuente *.Rmd*.
-  
-  Enfóquese en *comprender y aprender el algoritmo*, en aprender a utilizar nombres de variables, tipos de datos y estructuras de datos pertinentes y sus operaciones, en R. Aprenda a depurar y corregir los errores de compilación ([*Debugging*](https://adv--r-hadley-nz.translate.goog/debugging.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp)) de R.
-
-  Si quiere aprender más, consulte los [recursos de aprendizaje gratuitos](https://hadley.nz/) del creador de RStudio, el profesor Hadley Wickham o revise la mayor complicación de recursos de aprendizaje de R: [Big book of R](https://www.bigbookofr.com/). (Sitio web) (La compilación más grande de libros y fuentes documentales sobre R). Si se tien más cómodo, use el [traductor de Google](https://translate.google.com/) y lea en su propio idioma.
-
-  Suba sus archivos a su proyecto en [RStudio.cloud](https://posit.cloud/).
-
-
-- *Tarea 3.3: II. Decisiones bajo completa incertidumbre*. (Entrega: Semana 3).
-
-  *Objetivo*: Aprender los conceptos de la toma de decisiones bajo completa incertidumbre.
-
-  *Parte 1*. Elabore *en su cuaderno* la síntesis de los conceptos de la Unidad 2 (Rangel, 2012, pp. 17-24), (*criterios de elección no probabilísticos*) con un *glosario*. Haga un contraste de las ventajas y desventajas de los cuatro criterios: (1) *maximin de Wald*, (2) *maximax*, (3) *criterio de Hurwitz* (*Índice* $\alpha$) y (4) *pesar minimax* (*criterio de Savage*). Concéntrese en entender y dominar los términos del lenguaje.
-
-  *Parte 2*. Transcriba *en su cuaderno* el Ejemplo 2 (pp. 18-21) y el grupo de ejercicios de la Unidad 2. Aplique los conceptos y el machote del Ejemplo 2, según se solicite en cada ejercicio. Nuevamente, considere que resolver los ejercicios, con lápiz y papel en su cuaderno, reforzará sus conocimientos, así que realice una aplicación reflexiva y no mecánica de los conceptos.
-
-  Tome buenas fotografías de su tarea y súbalas a su cuenta de GitHub y enlácelas en un archivo Markdown del reporte de su tarea, explicando lo que se ilustra en las fotografías.
-
-
-- *Práctica 3.4: II: Decisiones bajo completa incertidumbre*. (Entrega: Semana 4).
-
-  *Objetivo*: Aprender y practicar los algoritmos de problemas de decisión bajo completa incertidumbre usando R.
-
-  *Parte 1*. Como prerrequisito debe haber realizado las tareas y prácticas previas.
-
-  *Parte 2*· Utilice el machote del código del Ejemplo 2 y resuélvalo en un archivo RMarkdown, embebiendo texto, código R y código LaTex. Demuestre que obtiene los mismos resultados. Llame a su archivo *Ejemplo 1.Rmd* y súbalo a su cuenta de GitHub donde corresponda. Instale los paquetes que requiera desde CRAN y úselos en RStudio. 
-
-  *Parte 3*. Resuelva los ejercicios de la Unidad 2 en un archivo RMarkdown llamado *Ejercicios 2.Rmd* y súbalo a su cuenta de [RStudio en la nube](https://posit.cloud/). Asegúrese que puede generar atomáticamente y correctamente la solución para cada ejercicio, generando el reporte en un archivo *html*, a partir del archivo fuente *.Rmd*.
-  
-  Enfóquese en *comprender y aprender el algoritmo*, en aprender a utilizar nombres de variables, tipos de datos y estructuras de datos pertinentes y sus operaciones, en R. 
-
-  Suba sus archivos generados a su cuenta de GitHub y pruébelos en su proyecto en [RStudio.cloud](https://posit.cloud/).
-
-
-- *Tarea 3.5: III. Decisiones bajo riesgo*.
-
-  *Objetivo*: Aprender los conceptos de la toma de decisiones bajo riesgo.
-
-  **Partes nones**. Elabore *en su cuaderno* la síntesis de los conceptos de la Unidad 3 (Rangel, 2012, pp. 25-54), con un *glosario* y tome nota de los supuestos de cada criterio. Concéntrese en entender y dominar los términos del lenguaje.
-
-  **Parte pares**. Transcriba *en su cuaderno* el ejemplo y resuelva el grupo de ejercicios correspondiente. Aplique los conceptos y el machote del Ejemplo correspondiente, según se solicite en cada ejercicio.
-  
-  *Parte 1*. 3.1 Criterios para la toma de decisiones sin experimentación: (Entrega: Semana 5)  
-     - 3.1.1 Criterio de Laplace  
-     - 3.1.2 Criterio de la máxima posibilidad  
-     - 3.1.3 Regla de decisión de Bayes (VEM)  
-     - 3.1.4 Minimización de la pérdida de oportunidad esperada (POE)                
-  
-  *Parte 2*. Ejemplo 3 y Grupo de ejercicios 3  (Entrega: Semana 6)
-
-  *Parte 3*. 3.2 Valor esperado de la información perfecta (VEIP)
-     - 3.2.1 Método 1
-     - 3.2.2 Método 2         
-
-  *Parte 4*. Ejemplo 4 y Grupo de ejercicios 4  (Entrega: Semana 7)
-
-  *Parte 5*. 3.3 Análisis de sensibilidad y 3.4 Árboles de decisión (Entrega: Semana 8)  
-
-  *Parte 6*. Ejemplo 5 y Grupo de ejercicios 5  (Entrega: Semana 9)
-
-  *Parte 7*. 3.5 Criterios para la torna de decisiones con experimentación y 3.6 Análisis en la forma extensiva         
-
-  *Parte 8*. Ejemplo 6 y Grupo de ejercicios 6 (Entrega: Semana 10)
-
-  Tome buenas fotografías de su tarea, súbalas a Telegram y enlácelas en un archivo Markdown del reporte de su tarea, explicando lo que se ilustra en las fotografías.
-
-
-- *Práctica 3.6: III. Decisiones bajo riesgo*. (Entrega: Semana 11).
-
-  *Objetivo*: Aprender los conceptos de la toma de decisiones bajo riesgo usando R.
-
-  *Parte 1*. Elabore *en su cuaderno* la síntesis de los conceptos de la Unidad 3 (Rangel, 2012, pp. 25-54), con un *glosario* de manera progresiva y los ejercicios correspondientes de la Práctica 3.6:
-     - 3.1. Criterios para la toma de decisiones sin experimentación  
-           (a) Criterio de Laplace  
-           (b) Criterio de la máxima posibilidad  
-           (c) Regla de decisión de Bayes (VEM)  
-           (d) Minimización de la pérdida de oportunidad esperada (POE))  
-     - 3.2. Valor esperado de la información perfecta (VEIP):  
-           (a) Método 1  
-           (b) Método 2  
-     - 3.3. Análisis de sensibilidad
-     - 3.4. Árboles de decisión
-     - 3.5. Criterios para la torna de decisiones con experimentación
-     - 3.6. Análisis en la forma extensiva
- 
-  Tome nota de los supuestos de cada criterio. Concéntrese en entender y dominar los algoritmos.
-
-
-### *Bibliografía Obligatoria*:
-- Rangel Nafaile, L. M. (2012). Guía de estudio de la asignatura Análisis de Decisiones, México, D.F.: Universidad Nacional Autónoma de México, ([pdf](https://library.bz/uploads/main/2e0058c96a3774d8a8d050470bebb977.pdf)). 
-- Irizarry, R. A. (2023). Capítulo 24: Procesamiento de cadenas. In *Introducción a la ciencia de datos: Análisis de datos y algoritmos de predicción con R* ([url](https://rafalab.dfci.harvard.edu/dslibro/procesamiento-de-cadenas.html)).
-- Anonymous (2017, Nov 23). [How to use LaTeX code in R chunk in R-Markdown?](https://stackoverflow.com/questions/47463861/how-to-use-latex-code-in-r-chunk-in-r-markdown).
-- Wickham, H. (). [22 Debugging](https://adv-r.hadley.nz/debugging.html). In *Advanced R*. Chapman & Hall’s. ([traducción](https://adv--r-hadley-nz.translate.goog/debugging.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp) ([pdf]())
-- Baruffa, O. (2023, Aug 27). [Big book of R](https://www.bigbookofr.com/). (Sitio web) (La compilación más grande de libros y fuentes documentales sobre R).
-
-##### *Bibliografía Complementaria:*   
-- Howard, R. A., & Abbas, A. E. (2016). Foundations of decision analysis [Global Edition]. Great Britain: Pearson Education. ([url](http://libgen.rs/book/index.php?md5=4B19F574BA8246A5BA274A7AF4BFB6A5)).
-- Drury, C. (2020). [*Management and cost accounting*](http://libgen.rs/book/index.php?md5=32C869373F6352B932D6EF56FB9CD9D4). USA: Cengage Learning EMEA.   
-- Howard, R. A. (1968). The foundations of decision analysis. *IEEE Transactions on Systems Science and Cybernetics, 4*(3), 211-219. ([url](https://ieeexplore.ieee.org/abstract/document/4082150)) ([pdf](https://sci-hub.ru/10.1109/TSSC.1968.300115)).
-- Ley-Borrás, R. (2015). Deciding on the decision situation to analyze: The critical first step of a decision analysis. *Decision Analysis, 12*(1), pp. 46-58. ([pdf](https://sci-hub.se/10.1287/deca.2014.0308)).  
-- Keeney, R. L. (2007). Developing objectives and attributes. *In* W. Edwards, R. F. Miles y D. von Winterfeldt. (2007). [*Advances in Decision Analysis: From foundations to applications*](http://libgen.rs/book/index.php?md5=AE826E7206D6FE17FD495BDB3BE0BC7B) (pp. 104-128), Cambridge: Cambridge University Press.
-- Ralph L. Keeney, R. L. (1982). Feature article - Decision Analysis: An overview. *Operations Research, 30*(5), 803-838. ([pdf](https://pubsonline.informs.org/doi/pdf/10.1287/opre.30.5.803)).  
-- Rios, S. (1994). [Decision theory and decision analysis: Trends and challenges](https://libgen.rs/book/index.php?md5=174BD23546E097199CECBDBA593D2521). New York: Springer Science+Business Media.
-- Ríos, S., Ríos, D., Mateos, A. y Martín, J. (1998). *Programación lineal y aplicaciones: Ejercicios resueltos*. México: Alfa Omega Ra Ma. ([pdf](http://libgen.rs/main/C3553551396E715FAD11F850D70DF9F2)).
-- Rojas, G., Fernandez, E., Whitney, C., Luedeling, E. & Cuneo, I. F. (2021). Adapting sweet cherry orchards to extreme weather events: Decision analysis in support of farmers "Investments in Central Chile." *Agricultural Systems* 187(February): 103031. DOI: https://doi.org/10.1016/j.agsy.2020.103031 . ([url](https://sci-hub.ru/10.1016/j.agsy.2020.103031)). ([video](https://www.youtube.com/watch?v=kpsqzkeg53Y)). (**Estudio de caso**).
-- Smith, J. E. y von Winterfeldt, D. (2004). Decision Analysis in "Management Science". *Management Science, 50*(5), 561-574. ([pdf](https://sci-hub.ru/10.2307/30046097)).  
-- Fox, J. (2016). Applied regression analysis and generalized linear models*. Thousand Oaks, CA: Sage. ([pdf](https://libgen.rs/book/index.php?md5=51DA2C83D6A72D575E6BD179DD61DFE6)). 	
-
-- Anónimo. (2023). [Decision trees in R Analytics](https://techvidvan.com/tutorials/decision-tree-in-r/) [Tutorial En Línea] TechVidvan.
-- Anónimo. (2023). [Decision trees in R Analytics](https://techvidvan.com/tutorials/decision-tree-in-r/) [Tutorial En Línea]. TechVidvan. (datos en el paquete ISLR).
-- Anónimo. (2017). [R decision trees: The best tutorial on tree based modeling in R!](https://data-flair.training/blogs/r-decision-trees/) [Tutorial En Línea]. DataFlair. ([datos](https://goo.gl/At238b)).
-- Chicaiza, A. (2020). [Modelo de otorgamiento de crédito (AD Science Analytics)](https://rpubs.com/Alex_Deiiv/CreditScoring). RPubs. (Datos en xls: [German Credit Case Data](https://ocw.mit.edu/courses/15-062-data-mining-spring-2003/3d0fbded046c53a5fb72d3bcd2064ac9_GermanCredit.xls)) ([Otra versión](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) de German Credit Case Data).
-- Nijs, V. R. (2019). [Radiant: Business analytics using R and Shiny](https://radiant-rstats.github.io/docs/index.html). ([Paquete en CRAN](https://cran.r-project.org/web/packages/radiant.data/readme/README.html)) ([Código fuente](https://github.com/radiant-rstats)) ([Documentación](https://radiant-rstats.github.io/docs/)) ([Instalación](https://radiant-rstats.github.io/docs/install.html)) ([Canal en YouTube](https://www.youtube.com/@RadiantForR/featured))
-- Deehr, J. (2017, Aug 28). [Multi objective decision analysis [MODA] in R](https://rstudio-pubs-static.s3.amazonaws.com/300421_0e5019919ff146ab9d16e27b09fbf767.html). RPubs. [DecisionAnalysis-package: DecisionAnalysis: Multi-Objective Decision Analysis [MODA]](https://rdrr.io/github/AFIT-R/MODA/man/DecisionAnalysis-package.html#heading-0). ([Datos](http://nflsavant.com/)) ([traducción](https://rstudio--pubs--static-s3-amazonaws-com.translate.goog/300421_0e5019919ff146ab9d16e27b09fbf767.html?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp)).
-- AFIT Data Science Lab. (2018). DecisionAnalysis. [[AFIT-R/MODA: Implementation of Multi Objective Decision Analysis](https://rdrr.io/github/AFIT-R/MODA/)]. RDRR. [[Código fuente en GitHub](https://github.com/AFIT-R/DecisionAnalysis)].  
-- Kuhn, M. & Silge, J. (2022,Dec 20). [Tidy modeling with R: A framework for modeling in the tydiverse](https://www.tmwr.org/). O'Reilly. ([GitHub](https://github.com/tidymodels/TMwR)).  
-
-### Bibliografía General:
-
-- Recursos digitales en la UAM: biblioteca de la Unidad Iztapalapa ([url](http://contingencia.izt.uam.mx/wp-content/uploads/2020/04/Biblioteca-Nuevo-3b-bindani-B.pdf)), biblioteca digital ([url](https://bidi.uam.mx/index.html)), [recursos varios](http://pcyti.izt.uam.mx/recursos/infext/infoext.html).  
-- Recursos controversiales: [Library Genesis](http://gen.lib.rus.ec/) (libros, artículos, novelas), [**SciHub**](https://sci-hub.se/about) (artículos), [The Pirate Bay](https://thepiratebay.org/index.html) (P2P file sharing network) (archivos), [Academic Torrents](http://academictorrents.com/) (artículos, datos y cursos).
-- Repositorios de software: [Software para la comunidad UAM](https://www.uam.mx/ti/soft/), [AlternativeTo](https://alternativeto.net/), [SourceForge](https://sourceforge.net/), [CDLibre](https://www.cdlibre.org/), [Software Heritage](https://www.softwareheritage.org/?lang=es), [GitHub](https://github.com/github).
- 
-- Valcheva, S. (s.f.). 10 Open Source Decision Tree Software Tools. ([url](https://www.intellspot.com/open-source-decision-tree/)).
-
-- Walum, H., & De Leon, D. (2022). Teacups, giraffes, & statistics (Tazas de té, jirafas y estadística). GitHub. [Módulos](https://tinystats.github.io/teacups-giraffes-and-statistics/) [Proyecto en RMarkdown](https://github.com/tinystats/teacups-giraffes-and-statistics) [Una deliciosa serie de módulos para aprender estadística y codificación en R para estudiantes, científicos y entusiastas de la estadística.]
-- Guisande González, C. & Vaamonde Liste, A. (2013). [Gráficos estadísticos y mapas con R](https://libgen.rs/book/index.php?md5=8ECF29580BFE702F21D16CC2C9BDBA5C). España: Díaz de Santos.
-- Universitat de les Illes Balears. Som UIB (2016, Sep 22). MOOC Aprende R : Introducción al tratamiento de datos con R y RStudio. *YouTube*. ([Lista de videos](https://www.youtube.com/playlist?list=PLnXFIHWLWQXFOIOdpAv2ioBHQuYgV7x2t)).
-- Teetor, P. (2019).  [*R cookbook: Proven recipes for data analysis, statistics, and graphics*]. O'Reilly. [Online] ([traducción al español](https://translate.google.com/translate?sl=en&tl=es&u=https://rc2e.com/)).
-- RStudio cheatsheets. ([url](https://github.com/rstudio/cheatsheets)).  
-- Wickham, H. & Grolemund, G. (2017). [*R for data science: Import, tidy, transform, visualize, and model data*](https://r4ds.had.co.nz/). O'Reilly. ([R para ciencia de datos](https://es.r4ds.hadley.nz)). ([Solución de los ejercicios](https://cienciadedatos.github.io/r4ds-soluciones/index.html)).  
-
-## Modalidades de Evaluación
-
-### Evaluación Global
-La asistencia puntual a la clase es obligatoria según el reglamento de estudios. Para tener derecho a presentar los exámenes debe tener una asistencia superior o igual al 80%. Es importante la *participación activa clase a clase*. La falta de participación en clase y la no entrega de sus reportes de prácticas a lo largo del trimestre tendrá repercusiones en la evaluación final que puede llegar a la reprobación del curso. Ver porcentajes de ponderación de calificación.
-
-#### Calificación
-| Factor | Porcentaje | Observaciones |
-| --- | :---: | ------------- |
-| Tareas|15% | Fecha límite: Por definir |
-| Prácticas| 15% | Fecha límite: Por definir |
-| Exámenes| 70% | Fecha: Por definir |
-| Total | 100% | |
-
-**Notas:
-  - **a).** Primer examen: *Teórico*: Fecha: Por definir. 
-  - **b).** Segundo examen: *Práctico*: Fecha: Por definir. 
-  - **Evaluación Global:** Quienes no hayan aprobado los exámenes tendrán oportunidad de aplicar una evaluación global teórico-práctica de todo el curso (Teoría y Práctica). La misma oportunidad es para quienes tengan baja calificación o deseen subir. 
-  - **Entrega de calificaciones:** Por definir.
-
-### Evaluación de Recuperación
-
-La *evaluación de recuperación* será aplicada por el profesor sinodal, bajo los lineamientos de la Coordinación de la Licenciatura en Administración, de acuerdo a las políticas definidas por la misma y será realizada según el calendario vigente.
-
-La evaluación de recuperación consistirá en la presentación de un examen que pretende cubrir los objetivos y el contenido del [programa oficial](https://csh.izt.uam.mx/sistemadivisional/SDIP/pac/2211088pe.pdf), por ello, el temario de la evaluación es el siguiente:
-l. Introducción.
-2. Metodología del proceso de decisión.
-3. Relación información - proceso de decisión.
-4. Tipología de los problemas de decisión.
-5. Estructuración de un problema de decisión.
-6. Modelos de decisión.
-     a. Modelo de norma mínima
-     b. Modelo de scoring
-     c. Árboles de decisión
-     d. Matriz de pagos.
-
-El programa oficial indica que la Evaluación de Recuperación "incluirá una **evaluación escrita** que podrá ser- **global** o complementaria con base en los contenidos del programa **Y un trabajo** que deberá entregarse en la fecha señalada en el calendario de evaluaciones de recuperación aprobado por
-el Consejo Académico". 
-
-Por lo anterior, **se solicita** como **prerrequisito** que el alumno realice la transcripción**, en su cuaderno, de los **conceptos** y los **ejemplos** y  sus **grupos de ejercicios** resueltos de las primeras tres unidades de la *[Guía de estudio de la asignatura Análisis de Decisiones](https://libgen.rs/book/index.php?md5=2E0058C96A3774D8A8D050470BEBB977)* (Rangel Nafaile, 2012). El prerrequisito garantiza que esté preparado para realizar el examen global. Sin embargo, puede usar cualquier otra bibliografía que juzgue conveniente como la incluida en este programa.
-
-La **evaluación de recuperación** será el día **por definir** a las **xxx**, en el salón xxx, asignado por la coordinación de Servicios Escolares y consistirá en **resolver un par de problemas** de análisis de decisiones, semejantes a los de la guía. El valor del examen es del 100%. Debe abordar un enfoque metodológico que incluya el encuadre del problema, el razonamiento del análisis y la solución o respuesta concreta, según se le pida en el problema. Para ello, debe presentarse, puntualmente, con bolígrafo, lápiz y calculadora (no se aceptará el uso de teléfono celular como calculadora). La duración del examen será de 2 horas. La calificación se le entregará 24 horas después.
-
-**Notas:**
-[^1]: Jaiswal, N. K. (1997). [*Military operations research: Quantitative decision making*](https://libgen.rs/book/index.php?md5=98AE66E1BEA25F94C02261DD3A990CF1). New York: Springer Science+Business Media.
-[^2]: Ormerod, R. (2003). The father of operational research. *In* P. Hore (Ed.) *Patrick Blackett: sailor, scientist and socialist* (pp. 188-200). UK: Frank Cass & Co.
-[^3]: Gass, S. I. y Fu, M. C. (2013). Preface. *In* Saul I. Gass y Michael C. Fu (Eds.). [*Encyclopedia of operations research and management science*](https://libgen.rs/book/index.php?md5=2FC6FBADA0A62C8D44F19664B1BAF3D1). New York, Heidelberg, Dordrecht, London: Springer.
-[^4]: Hitch, C. (1955). [An appreciation of systems analysis](https://sci-hub.ru/10.2307/166759). *Journal of the Operations Research Society of America, 3*(4), 466-481.
-[^5]: Simon, H. A. (1955). [A behavioral model of rational choice](https://sci-hub.ru/10.2307/1884852). *The Quarterly Journal of Economics, 69*(1) (Feb), 99-118. DOI: [10.2307/1884852](http://doi.org/10.2307/1884852)
-[^6]: Beer, S. (1968). [*Management science: The business use of operations research*](). USA: Aldus Books.
-[^7]: Witzel, M. (2012). *A History of Management Thought*. London: Routledge.
-[^8]: Buchanan, L y O'Connell, A. (2006). [A brief history of decision making](http://samuellearning.org/decisionmaking/handout1.pdf). *Harvard Business Review, 84*(1), 32-41, 132.
-[^9]: Chen, N. C., Shauver, M. J., & Chung, K. C. (2009). [A primer on use of decision analysis methodology in hand surgery](https://sci-hub.ru/10.1016/j.jhsa.2009.03.005). *The Journal of Hand Surgery, 34*(6), 983-990.
-[^10]: Call, H. J., y Miller, W. A. (1990). [A comparison of approaches and implementations for automating decision analysis](https://sci-hub.ru/10.1016/0951-8320%2890%2990092-2). *Reliability Engineering & System Safety, 30*(1-3), 115-162.
