@@ -1,4 +1,4 @@
-# Programa Analítico de la UEA **Análisis de Decisiones** (Teoría)
+### Programa Analítico de la UEA **Análisis de Decisiones** (Teoría)
 ### Licenciatura en Administración — Unidad Iztapalapa
 
 <img src="https://github.com/jzavalar/informatica/blob/main/images/conjunto-baseIzt.png" alt="UAM Iztapalapa" width="60%"/>
