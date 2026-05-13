@@ -52,6 +52,7 @@ Considere el [programa oficial vigente de la UEA Análisis de Decisiones](http:/
 | **Profesor** | dr. Jesús Zavala Ruiz |
 | **Asesorías** | Martes 20:00–22:00 h, vía Telegram (previa solicitud) |
 | **Contacto** | [jzr@xanum.uam.mx](mailto:jzr@xanum.uam.mx) • [@jzavalar](https://t.me/jzavalar) |
+| **Grrupo de Telegram:**  | <https://t.me/+EqdsZvxqiOBhMDMx>  | 
 
 #### II. Fundamentación y Enfoque
 
