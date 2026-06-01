@@ -19,7 +19,7 @@ Para transformar el escenario en un modelo cuantificable, se delimitan explícit
 #### 3. Modelado económico y condiciones lógicas
 Se establecen los parámetros operativos que rigen la estructura de costos e ingresos:
 * Precio de venta unitario ($P_v$): \$120.
-* Costo unitario por escala de volumen ($C_u$): \$100 (para $a_1$), \$90 (para $a_2$), \$85 (para $a_3$).
+* Costo unitario por escala de volumen ($C_u$): $100 pesos$ (para $a_1$), $90 pesos$ (para $a_2$), $85 pesos$ (para $a_3$).
 * Precio de liquidación o remate ($P_r$): \$60.
 * Pérdida por demanda insatisfecha ($L_g$): \$5 por unidad no entregada (costo de oportunidad por deterioro del buen nombre).
 
