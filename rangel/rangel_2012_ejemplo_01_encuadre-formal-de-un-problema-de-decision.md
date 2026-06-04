@@ -34,25 +34,25 @@ La función de consecuencias se formaliza mediante tres condiciones lógicas mut
 #### 4. Demostración aritmética progresiva
 A continuación, se calcula sistemáticamente cada celda de la matriz, aplicando la condición lógica correspondiente a cada intersección entre estado de la naturaleza y acción.
 
-**Para la acción $a_1 ( C_u = 100\quad pesos)$:**  
-- $\theta_1 (Demanda 100): 100 \times (120 - 100) = 100 \times 20 = \mathbf{2,000}\quad pesos$  
-- $\theta_2 (Demanda 150): [100 \times 20] - [5 \times (150 - 100)] = 2,000 - 250 = \mathbf{1,750}\quad pesos$  
-- $\theta_3 (Demanda 200): [100 \times 20] - [5 \times (200 - 100)] = 2,000 - 500 = \mathbf{1,500}\quad pesos$  
+**Para la acción $a_1 ( C_u = 100$ pesos $)$:**    
+* $\theta_1$ (Demanda 100): $100 \times (120 - 100) = 100 \times 20 = \mathbf{2,000}$ pesos  
+* $\theta_2$ (Demanda 150): $[100 \times 20] - [5 \times (150 - 100)] = 2,000 - 250= \mathbf{1,750}$ pesos  
+* $\theta_3$ (Demanda 200): $[100 \times 20] - [5 \times (200 - 100)] = 2,000 - 500 = \mathbf{1,500}$ pesos  
 
-**Para la acción $a_2 (C_u = 90\quad pesos)$:**  
-- $\theta_1 (Demanda 100): [100 \times (120 - 90)] + [(200 - 100) \times (60 - 90)] = 3,000 + (100 \times -30) = \mathbf{0}\quad pesos$  
-- $\theta_2 (Demanda 150): [150 \times (120 - 90)] + [(200 - 150) \times (60 - 90)] = 4,500 + (50 \times -30) = \mathbf{3,000}\quad pesos$  
-- $\theta_3 (Demanda 200): 200 \times (120 - 90) = 200 \times 30 = \mathbf{6,000} pesos$  
+**Para la acción $a_2 (C_u = 90$ pesos $)$:**  
+* $\theta_1$ (Demanda 100): $[100 \times (120 - 90)] + [(200 - 100) \times (60 - 90)] = 3,000+(100 \times -30) = \mathbf{0}$ pesos  
+* $\theta_2$ (Demanda 150): $[150 \times (120 - 90)] + [(200 - 150) \times (60 - 90)] = 4,500 + (50 \times -30) = \mathbf{3,000}$ pesos   
+* $\theta_3$ (Demanda 200): $200 \times (120 - 90) = 200 \times 30 = \mathbf{6,000}$ pesos  
 
 **Para la acción $a_3 (C_u = 85 pesos)$:**  
-- $\theta_1 (Demanda 100): [100 \times (120 - 85)] + [(300 - 100) \times (60 - 85)] = 3,500 + (200 \times -25) = \mathbf{-1,500}\quad pesos$  
-- $\theta_2 (Demanda 150): [150 \times (120 - 85)] + [(300 - 150) \times (60 - 85)] = 5,250 + (150 \times -25) = \mathbf{1,500}\quad pesos$  
-- $\theta_3 (Demanda 200): [200 \times (120 - 85)] + [(300 - 200) \times (60 - 85)] = 7,000 + (100 \times -25) = \mathbf{4,500}\quad pesos$  
+* $\theta_1$ (Demanda 100): $[100 \times (120 - 85)] + [(300 - 100) \times (60 - 85)] = 3,500 + (200 \times -25) = \mathbf{-1,500}$ pesos    
+* $\theta_2$ (Demanda 150): $[150 \times (120 - 85)] + [(300 - 150) \times (60 - 85)] = 5,250 + (150 \times -25) = \mathbf{1,500}$ pesos  
+* $\theta_3$ (Demanda 200): $[200 \times (120 - 85)] + [(300 - 200) \times (60 - 85)] = 7,000 + (100 \times -25) = \mathbf{4,500}$ pesos    
 
 #### 5. Matriz de pagos inicial
-Respetando la convención notacional de la autora, donde las **filas representan los estados de la naturaleza ($\theta_i$)** y las **columnas representan las acciones ($a_j$)**, se integra la matriz de consecuencias (Ganancia en pesos):
+Respetando la convención notacional de la autora, donde las **filas representan los estados de la naturaleza $(\theta_i)$** y las **columnas representan las acciones $(a_j)$**, se integra la matriz de consecuencias (Ganancia en pesos):
 
-| Estado de la naturaleza ($\theta_i$)\ Acción ($a_j$) | $a_1$ (100 pzas.) | $a_2$ (200 pzas.) | $a_3$ (300 pzas.) |
+| Estado de la naturaleza $(\theta_i)$ Acción  $(a_j)$ | $a_1$ (100 pzas.) | $a_2$ (200 pzas.) | $a_3$ (300 pzas.) |
 |:---|:---:|:---:|:---:|
 | $\theta_1$: Demanda 100 | \$2,000 | \$0 | -\$1,500 |
 | $\theta_2$: Demanda 150 | \$1,750 | \$3,000 | \$1,500 |
@@ -72,19 +72,19 @@ Conforme a lo establecido en la sección 1.6 del material base (Rangel, 2012), u
 #### 7. Aplicación del algoritmo y depuración matricial
 Se aplica el protocolo al par $(a_2, a_3)$:
 
-| Estado $\theta_i$ | $C($ $\theta_i$ $,$ $a_2$ $)$ | $C(\theta_i, a_3)$ | Evaluación ($a_2 \geq a_3$) | Evaluación ($a_2 > a_3$) |
+| Estado $\theta_i$ | $C(\theta_i,a_2)$ | $C(\theta_i,a_3)$ | Evaluación $(a_2\geq a_3)$ | Evaluación $(a_2>a_3)$ |
 |:---|:---:|:---:|:---:|:---:|
 | $\theta_1$: Demanda 100 pzas | \$0 | -\$1,500 | ✓ | ✓ |
 | $\theta_2$: Demanda 150 pzas | \$3,000 | \$1,500 | ✓ | ✓ |
 | $\theta_3$: Demanda 200 pzas | \$6,000 | \$4,500 | ✓ | ✓ |
 
-* **Resultado algorítmico:** La acción $a_2$ cumple con superioridad o igualdad en los tres estados, y estricta superioridad en los tres. Por lo tanto, $a_2$ $\succ$ $a_3$.
+* **Resultado algorítmico:** La acción $a_2$ cumple con superioridad o igualdad en los tres estados, y estricta superioridad en los tres. Por lo tanto, $a_2 \succ a_3$.
 * **Conclusión:** La estrategia $a_3$ es inadmisible y se elimina del análisis.
 
 #### 8. Matriz depurada para la toma de decisión
 El espacio de soluciones queda reducido a las estrategias admisibles, listo para la aplicación de los criterios de decisión bajo incertidumbre o riesgo que se desarrollan en unidades subsiguientes:
 
-| Estado de la naturaleza ($\theta_i$) \ Acción ($a_j$) | $a_1$ (100 pzas.) | $a_2$ (200 pzas.) |
+| Estado de la naturaleza $(\theta_i)$ / Acción $(a_j)$ | $a_1$ (100 pzas.) | $a_2$ (200 pzas.) |
 |:---|:---:|:---:|
 | $\theta_1$: Demanda 100 pzas | \$2,000 | \$0 |
 | $\theta_2$: Demanda 150 pzas | \$1,750 | \$3,000 |
