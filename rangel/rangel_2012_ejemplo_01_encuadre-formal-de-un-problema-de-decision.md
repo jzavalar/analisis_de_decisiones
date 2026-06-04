@@ -18,36 +18,36 @@ Para transformar el escenario en un modelo cuantificable, se delimitan explícit
 
 #### 3. Modelado económico y condiciones lógicas
 Se establecen los parámetros operativos que rigen la estructura de costos e ingresos:
-* Precio de venta unitario ($P_v$): \$120.
-* Costo unitario por escala de volumen ($C_u$): $100 pesos$ (para $a_1$), $90 pesos$ (para $a_2$), $85 pesos$ (para $a_3$).
-* Precio de liquidación o remate ($P_r$): \$60.
-* Pérdida por demanda insatisfecha ($L_g$): \$5 por unidad no entregada (costo de oportunidad por deterioro del buen nombre).
+* Precio de venta unitario $(P_v)$: \$120.
+* Costo unitario por escala de volumen $(C_u)$: \$100 pesos (para $a_1$), \$90 pesos (para $a_2$), \$85 pesos (para $a_3$).
+* Precio de liquidación o remate $(P_r)$: \$60.
+* Pérdida por demanda insatisfecha $(L_g)$: \$5 por unidad no entregada (costo de oportunidad por deterioro del buen nombre).
 
 La función de consecuencias se formaliza mediante tres condiciones lógicas mutuamente excluyentes:
-1. **Si la demanda iguala al pedido ($D = Q$):**  
+1. **Si la demanda iguala al pedido $(D = Q)$:**  
    $C = D \times (P_v - C_u)$
-2. **Si la demanda es menor al pedido ($D < Q$):**  
+2. **Si la demanda es menor al pedido $(D < Q)$:**  
    $C = [D \times (P_v - C_u)] + [(Q - D) \times (P_r - C_u)]$
-3. **Si la demanda supera al pedido ($D > Q$):**  
+3. **Si la demanda supera al pedido $(D > Q)$:**  
    $C = [Q \times (P_v - C_u)] - [L_g \times (D - Q)]$
 
 #### 4. Demostración aritmética progresiva
 A continuación, se calcula sistemáticamente cada celda de la matriz, aplicando la condición lógica correspondiente a cada intersección entre estado de la naturaleza y acción.
 
-**Para la acción $a_1 ( C_u = 100 pesos)$:**  
-- $\theta_1$ $(Demanda 100):$ $100$ $\times$ $(120 - 100) = 100$ $\times$ $20 =$ $\mathbf{2,000} pesos$  
-- $\theta_2$ (Demanda 150): $[100 \times 20] - [5 \times (150 - 100)] = 2,000 - 250 = \mathbf{1,750} pesos$  
-- $\theta_3$ (Demanda 200): $[100 \times 20] - [5 \times (200 - 100)] = 2,000 - 500 = \mathbf{1,500} pesos$  
+**Para la acción $a_1 ( C_u = 100\quad pesos)$:**  
+- $\theta_1 (Demanda 100): 100 \times (120 - 100) = 100 \times 20 = \mathbf{2,000}\quad pesos$  
+- $\theta_2 (Demanda 150): [100 \times 20] - [5 \times (150 - 100)] = 2,000 - 250 = \mathbf{1,750}\quad pesos$  
+- $\theta_3 (Demanda 200): [100 \times 20] - [5 \times (200 - 100)] = 2,000 - 500 = \mathbf{1,500}\quad pesos$  
 
-**Para la acción $a_2 (C_u = 90 pesos)$:**  
-- $\theta_1$ (Demanda 100): $[100 \times (120 - 90)] + [(200 - 100) \times (60 - 90)] = 3,000 + (100 \times -30) = \mathbf{0} pesos$  
-- $\theta_2$ (Demanda 150): $[150 \times (120 - 90)] + [(200 - 150) \times (60 - 90)] = 4,500 + (50 \times -30) = \mathbf{3,000} pesos$  
-- $\theta_3$ (Demanda 200): $200 \times (120 - 90) = 200 \times 30 = \mathbf{6,000} pesos$  
+**Para la acción $a_2 (C_u = 90\quad pesos)$:**  
+- $\theta_1 (Demanda 100): [100 \times (120 - 90)] + [(200 - 100) \times (60 - 90)] = 3,000 + (100 \times -30) = \mathbf{0}\quad pesos$  
+- $\theta_2 (Demanda 150): [150 \times (120 - 90)] + [(200 - 150) \times (60 - 90)] = 4,500 + (50 \times -30) = \mathbf{3,000}\quad pesos$  
+- $\theta_3 (Demanda 200): 200 \times (120 - 90) = 200 \times 30 = \mathbf{6,000} pesos$  
 
 **Para la acción $a_3 (C_u = 85 pesos)$:**  
-- $\theta_1$ (Demanda 100): $[100 \times (120 - 85)] + [(300 - 100) \times (60 - 85)] = 3,500 + (200 \times -25) = \mathbf{-1,500} pesos$  
-- $\theta_2$ (Demanda 150): $[150 \times (120 - 85)] + [(300 - 150) \times (60 - 85)] = 5,250 + (150 \times -25) = \mathbf{1,500} pesos$  
-- $\theta_3$ (Demanda 200): $[200 \times (120 - 85)] + [(300 - 200) \times (60 - 85)] = 7,000 + (100 \times -25) = \mathbf{4,500} pesos$  
+- $\theta_1 (Demanda 100): [100 \times (120 - 85)] + [(300 - 100) \times (60 - 85)] = 3,500 + (200 \times -25) = \mathbf{-1,500}\quad pesos$  
+- $\theta_2 (Demanda 150): [150 \times (120 - 85)] + [(300 - 150) \times (60 - 85)] = 5,250 + (150 \times -25) = \mathbf{1,500}\quad pesos$  
+- $\theta_3 (Demanda 200): [200 \times (120 - 85)] + [(300 - 200) \times (60 - 85)] = 7,000 + (100 \times -25) = \mathbf{4,500}\quad pesos$  
 
 #### 5. Matriz de pagos inicial
 Respetando la convención notacional de la autora, donde las **filas representan los estados de la naturaleza ($\theta_i$)** y las **columnas representan las acciones ($a_j$)**, se integra la matriz de consecuencias (Ganancia en pesos):
